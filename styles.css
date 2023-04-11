@@ -1,0 +1,120 @@
+body{
+    background-image: url(./images/brown-texture.jpg);
+    font-family: 'Lato', sans-serif;
+    font-weight: thin 100;
+    
+}
+.game{
+    background: linear-gradient(90deg, rgb(244, 242, 242) 0 50%, white 50% 100%);
+    width : 1400px;
+    height: 700px;
+}
+main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.top img{
+    padding-right: 10px;
+}
+.cover {
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+    flex-wrap: nowrap;
+    
+}
+
+.col-2{
+    padding-top: 50px;
+}
+.dice {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 64px;
+    background-color: white;
+    text-align: center;
+    line-height: 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+   
+    
+  }
+  @keyframes roll {
+    0% { transform: rotate(0deg); }
+    12% { transform: rotate(90deg); }
+    25% { transform: rotate(180deg); }
+    37% { transform: rotate(270deg); }
+    50% { transform: rotate(360deg); }
+    67% { transform: rotate(450deg); }
+    75% { transform: rotate(540deg); }
+    87% { transform: rotate(630deg); }
+    100% { transform: rotate(720deg); }
+  }
+  
+  .rolling {
+    animation-name: roll;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+  
+  
+
+.player{
+    font-weight: lighter;
+}
+.player .p1{
+    
+}
+
+.player h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-top: 50px;
+    
+}
+.point{
+    text-align: center;
+    color: red;
+    font-size: 5em;
+    font-weight: lighter;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    padding-top: 400px;
+    text-align: center;
+    gap: 30px;
+    text-transform: uppercase;
+    
+}
+
+.current{
+    background-color: red;
+    font-size: 16px;
+    width: 150px;
+    height: 100px;
+    padding-top: 5px;
+    margin-top: 260px; 
+    text-align: center; 
+    text-transform: uppercase;
+}
+
+.current-point{
+    color: white;
+    font-size: 48px;
+}
