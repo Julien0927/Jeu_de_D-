@@ -1,7 +1,9 @@
 body{
     background-image: url(./images/brown-texture.jpg);
     font-family: 'Lato', sans-serif;
-    font-weight: thin 100;
+}
+
+h2{
     
 }
 .game{
@@ -28,11 +30,9 @@ main{
 }
 
 .row{
-    display: flex;
     justify-content: center;
     column-gap: 70px;
     flex-wrap: nowrap;
-    
 }
 
 .col-2{
@@ -50,9 +50,9 @@ main{
     padding-top: 100px;
     display: flex;
     justify-content: center;
-   
-    
+    margin-left: 15px;
   }
+
   @keyframes roll {
     0% { transform: rotate(0deg); }
     12% { transform: rotate(90deg); }
@@ -71,22 +71,15 @@ main{
     animation-timing-function: ease-out;
   }
   
-  
-
-.player{
-    font-weight: lighter;
-}
-.player .p1{
-    
-}
 
 .player h2{
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
     padding-top: 50px;
-    
+    font-weight: lighter;
 }
-.point{
+
+.globalPoint{
     text-align: center;
     color: red;
     font-size: 5em;
@@ -94,27 +87,29 @@ main{
 }
 
 .middle{
-    display: flex;
-    justify-content: center;
-    padding-top: 400px;
+    padding-top: 330px;
     text-align: center;
-    gap: 30px;
+    gap: 60px;
     text-transform: uppercase;
-    
+    line-height: 3;
 }
 
-.current{
+img:hover{
+    cursor: pointer;
+}
+.round{
     background-color: red;
     font-size: 16px;
     width: 150px;
     height: 100px;
     padding-top: 5px;
-    margin-top: 260px; 
+    margin-top: 220px; 
     text-align: center; 
     text-transform: uppercase;
+    margin-left: 50px;
 }
 
-.current-point{
+.round-point{
     color: white;
     font-size: 48px;
 }
